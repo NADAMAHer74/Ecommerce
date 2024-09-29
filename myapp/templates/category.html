@@ -1,0 +1,38 @@
+{% extends 'base.html' %}  
+{% load static %}
+ {% block content %}
+
+    <section >
+        <div class="container py-2">
+          <h4 class="text-center mb-5 mt-5"><strong>{{category}}</strong></h4>
+      
+          <div class="row ">
+            {% for products in products %}
+      
+            <div class="col-lg-4 col-md-6 position-relative product " style="margin-bottom: 100px;">
+              <div class="overflow-hidden">
+                <img src="{{ products.image.url }}"
+                class="w-100" />
+              </div>
+               
+              
+                  <div class="mask" >
+                    <div class="badge bg-light pt-2 ms-3 mt-3 text-dark">
+                        <img src="{% static 'images/cart.png' %}">
+                    </div>
+                  </div>
+                  
+                  <a href="{% url 'product' products.id %}"                
+                    class="productInfo w-100 link-dark">
+                  {{products.name}} </br>  {{products.description}}</br> {{products.price}}</a>
+              
+      
+            </div>
+            {% endfor %}
+      
+      
+          </div>
+          
+        </section>
+ 
+{%endblock %}

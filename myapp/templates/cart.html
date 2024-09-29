@@ -1,0 +1,213 @@
+{% extends 'base.html' %} {% block content %}
+<section class="h-100 h-custom" style="background-color: #eee">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="row">
+              <div class="col-lg-7">
+                <h5 class="mb-3">
+                  <a href="{% url 'home' %}" class="text-body"
+                    ><i class="fas fa-long-arrow-alt-left me-2"></i>Continue
+                    shopping</a
+                  >
+                </h5>
+                <hr />
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <div>
+                    <p class="mb-1">Shopping cart</p>
+                    <p class="mb-0">You have 4 items in your cart</p>
+                  </div>
+                  <div>
+                    <p class="mb-0">
+                      <span class="text-muted">Sort by:</span>
+                      <a href="#!" class="text-body"
+                        >price <i class="fas fa-angle-down mt-1"></i
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img
+                            src="https://www.chanel.com/images//t_one///q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620/classic-handbag-black-wool-tweed-silver-tone-metal-wool-tweed-silver-tone-metal-packshot-artistique-vue1-a01112b1371894305-9525700657182.jpg"
+                            class="img-fluid rounded-3"
+                            style="width: 100px"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <h5>Channel CLASSIC HANDBAG</h5>
+                          <p class="small mb-0">
+                            Wool Tweed & Silver-Tone Metal Black 6 × 9.9 × 2.5
+                            in ( cm )
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px">
+                          <h5 class="fw-normal mb-0">2</h5>
+                        </div>
+                        <div style="width: 80px">
+                          <h5 class="mb-0">$900</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece"
+                          ><i class="fas fa-trash-alt"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img
+                            src="https://www.chanel.com/images//t_zoomfshacc/f_auto//classic-handbag-black-embroidered-denim-sequins-silver-tone-metal-embroidered-denim-sequins-silver-tone-metal-packshot-artistique-vue1-a01112b1412594305-9529159778334.jpg"
+                            class="img-fluid rounded-3"
+                            alt="Shopping item"
+                            style="width: 100px"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <h5>Channel CLASSIC HANDBAG</h5>
+                          <p class="small mb-0">
+                            Embroidered Denim, Sequins & Silver-Tone Metal Black
+                            6 × 9.9 × 2.5 in ( cm )
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px">
+                          <h5 class="fw-normal mb-0">2</h5>
+                        </div>
+                        <div style="width: 80px">
+                          <h5 class="mb-0">$900</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece"
+                          ><i class="fas fa-trash-alt"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img
+                            src="https://img.mytheresa.com/1094/1236/90/jpeg/catalog/product/8c/P00675612.jpg"
+                            class="img-fluid rounded-3"
+                            alt="Shopping item"
+                            style="width: 100px"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <h5>Gucci</h5>
+                          <p class="small mb-0">GG Marmont Mini shoulder bag</p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px">
+                          <h5 class="fw-normal mb-0">1</h5>
+                        </div>
+                        <div style="width: 80px">
+                          <h5 class="mb-0">$1199</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece"
+                          ><i class="fas fa-trash-alt"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 mb-lg-0">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img
+                            src="https://img.mytheresa.com/1094/1236/90/jpeg/catalog/product/4f/P00863145.jpg"
+                            class="img-fluid rounded-3"
+                            alt="Shopping item"
+                            style="width: 100px"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <h5>Gucci SAINT LAURENT</h5>
+                          <p class="small mb-0">
+                            College Medium leather shoulder bag
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px">
+                          <h5 class="fw-normal mb-0">1</h5>
+                        </div>
+                        <div style="width: 80px">
+                          <h5 class="mb-0">$1799</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece"
+                          ><i class="fas fa-trash-alt"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div
+                  class="card text-white rounded-3"
+                  style="background-color: rgb(56, 53, 53)"
+                >
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-2">Subtotal</p>
+                      <p class="mb-2">$4798.00</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-2">Shipping</p>
+                      <p class="mb-2">$20.00</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-4">
+                      <p class="mb-2">Total(Incl. taxes)</p>
+                      <p class="mb-2">$4818.00</p>
+                    </div>
+
+                    <button type="button" class="btn bg-light btn-block btn-lg">
+                      <div
+                        class="d-flex justify-content-between"
+                        style="color: black"
+                      >
+                        <p class="mx-3">$4818.00</p>
+                        <a style="color: black" href="{% url 'checkout' %}"
+                          >Checkout
+                        </a>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

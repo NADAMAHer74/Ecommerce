@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% load static %}  {% block content %}
+
+<div class="container-fluid">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner position-relative">
+            {% for slider in slider %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ slider.image.url }}" class="d-block w-100 h-100" alt="slide">
+                    <div class="overlay">
+                        <h1 class="text-center">{{ slider.title }}</h1>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+    <section >
+        <div class="container py-2 my-5">
+      
+          <div class="row ">
+            {% for products in products %}
+      
+            <div class="col-lg-4 col-md-6 position-relative product" style="margin-bottom: 100px;">
+              <div class="overflow-hidden">
+                <img src="{{ products.image.url }}"
+                class="w-100" />
+              </div>
+               
+              
+                  <div class="mask" >
+                    <div class="badge bg-light pt-2 ms-3 mt-3 text-dark">
+                        <img src="{% static 'images/cart.png' %}">
+                    </div>
+                  </div>
+                  
+                  <a href="{% url 'product' products.id %}"                
+                    class="productInfo w-100 link-dark">
+                  {{products.name}} </br>  {{products.description}}</br> {{products.price}}</a>
+              
+      
+            </div>
+            {% endfor %}
+      
+      
+          </div>
+        
+        </section>
+ 
+{%endblock %}

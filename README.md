@@ -1,2 +1,2 @@
-  Life Demo
+  Live Demo
 https://nadamaher.pythonanywhere.com/
